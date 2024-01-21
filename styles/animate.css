@@ -1,0 +1,114 @@
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3000);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInStayFadeOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes moveLogo {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(3) scaleY(3);
+    }
+    100% {
+        top: 20px;
+        left: 20px;
+        transform: translate(0, 0) scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes fadeBackgroundColor {
+    0% {
+        background-color: #2A3647;
+    }
+    100% {
+        background-color: #F6F7F8;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-image: url(../assets/img/logo-white.svg);
+    }
+    100% {
+        background-image: url(../assets/img/logo_main.svg);
+    }
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animate-fade-out {
+    opacity: 1;
+    animation-name: fadeOut;
+    animation-duration: 500ms;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animate-done {
+    opacity: 1;
+}
+
+.animate-logo-start {
+    animation: moveLogo 800ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animate-Mask-start {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}

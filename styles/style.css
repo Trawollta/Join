@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #F6F7F8;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 8px !important;
+    height: 10px !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.contact-leftside::-webkit-scrollbar,
+.panels::-webkit-scrollbar,
+.taskInputContainer::-webkit-scrollbar {
+    width: 8px !important;
+    /* Breite des Scrollbalkens */
+    height: 10px !important;
+    /* Höhe des Scrollbalkens (bei horizontalen Scrollbalken) */
+}
+
+.contact-leftside::-webkit-scrollbar-thumb,
+.panels::-webkit-scrollbar-thumb,
+.taskInputContainer::-webkit-scrollbar-thumb {
+    background-color: #29ABE2 !important;
+    border-radius: 5px !important;
+}
